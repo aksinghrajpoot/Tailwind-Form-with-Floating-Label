@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login form with floating label</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body class="bg-gradient-to-b from-pink-600 to-blue-600">
+    <main class="flex items-center justify-center h-screen">
+      <div class="shadow-md bg-white py-10 px-14 rounded-md">
+        <h2 class="text-2xl font-bold uppercase text-center">Login</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2048px-Tailwind_CSS_Logo.svg.png" alt="A K Singh" title="A K Singh" class="block w-20 h-20 mx-auto hover:scale-110 transition-all mt-2 rounded-full border-2 border-cyan-500 p-1">
+
+        <form class="pt-6 pb-3">
+          <div class="inputs space-y-4">
+            <!-- For email input -->
+            <div class="relative group" title="email">
+              <input
+                type="email"
+                placeholder="Email"
+                class="px-3 relative rounded-md bg-transparent z-10 border-2 border-gray-300 h-10 focus:outline-none peer placeholder-transparent focus:border-purple-400"
+              />
+              <label
+                class="text-gray-400 peer-placeholder-shown:text-gray-500 px-0.5 rounded-lg z-20 peer-focus:z-20 peer-placeholder-shown:z-0 bg-white absolute left-3 -top-2.5 text-sm peer-placeholder-shown:top-2 peer-placeholder-shown:text-base transition-all peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-purple-500"
+                >Email</label
+              >
+            </div>
+            <!-- For Password input -->
+            <div class="relative group" title="email">
+              <input
+                type="password"
+                placeholder="Password"
+                class="relative px-3 rounded-md bg-transparent z-10 border-2 border-gray-300 h-10 focus:outline-none peer placeholder-transparent focus:border-purple-400"
+              />
+              <label
+                class="text-gray-400 peer-placeholder-shown:text-gray-500 px-0.5 rounded-lg z-20 peer-focus:z-20 peer-placeholder-shown:z-0 bg-white absolute left-3 -top-2.5 text-sm peer-placeholder-shown:top-2 peer-placeholder-shown:text-base transition-all peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-purple-500"
+                >Password</label
+              >
+            </div>
+          </div>
+          <button
+            class="block w-full py-2 my-3 bg-purple-600 text-white hover:bg-purple-700  transition-all"
+            type="submit"
+          >
+            Login
+          </button>
+          <hr class="w-1/2 mx-auto" />
+          <div class="text-center mt-2">
+            <span class="text-gray-600 text-md">Not Registered?</span
+            ><br /><span
+              class="text-purple-500 text-sm underline cursor-pointer"
+              >Resgister Now</span
+            >
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
